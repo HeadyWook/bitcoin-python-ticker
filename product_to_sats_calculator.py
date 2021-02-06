@@ -33,8 +33,8 @@ store_title = "Heady Tie Dyes"  # Set the title of the store; This can be replac
 print("=" * 25)  # Divider.
 print(store_title.center(25))  # Display centered title.
 print("=" * 25)  # Divider.
-price_str_rounded = API_URL.text[372:381]  # Bitcoin price in USD rounded to two decimal places.
-print(("1 BTC = $" + price_str_rounded).center(25))
+price_string_rounded = str(format(round(btc_price_usd, 2), ','))  # Round two decimal places, format, and make string.
+print(("1 BTC = $" + price_string_rounded).center(25))  # Display Bitcoin in USD.
 print("=" * 25)  # Divider.
 
 # Set the price of the product in USD.
